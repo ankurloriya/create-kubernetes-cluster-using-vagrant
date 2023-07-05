@@ -8,14 +8,24 @@ Create cluster require 2 primary components
 1. VirtualBox
 2. Vagrant
 
+### Clone Repository
+```bash
+git clone https://github.com/ankurloriya/create-kubernets-cluster-using-vagrant.git
+```
+
 ### How to install VirtualBox
 ```bash
-apt update
-apt install virtualbox
+sudo apt update
+sudo apt install virtualbox
 ```
 
 ### Install Vagrant on Ubuntu
 ```bash
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+
+sudo apt update && sudo apt install vagrant
 ```
 
 ### Create Kubernetes Cluster
@@ -37,6 +47,6 @@ vagrant destroy
 ```
 
 
-#### Thank You
-- [How to install VirtualBox and Vagrant](https://www.fosslinux.com/69145/install-vagrant-on-ubuntu.htm)
-- [Fork scripts](https://gist.github.com/Frewx) - [Blog](https://ugurakgul.medium.com/creating-a-local-kubernetes-cluster-with-vagrant-ba591ab70ee2)
+### Thank You
+- [Fork scripts from Frewx gist](https://gist.github.com/Frewx)
+- [Blog](https://ugurakgul.medium.com/creating-a-local-kubernetes-cluster-with-vagrant-ba591ab70ee2)
