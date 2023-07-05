@@ -1,4 +1,4 @@
-# Kubernetes Cluster on Virtual Box
+# Kubernetes Cluster on Virtual Box using Vagrant
 
 This script help to create Kubernetes cluster on Virtual Box with dynamic number of nodes.
 Scripts help you to execute your multi-nodes scenarios. You can test your load, find bottle neck of your application.
@@ -11,6 +11,7 @@ Create cluster require 2 primary components
 ### Clone Repository
 ```bash
 git clone https://github.com/ankurloriya/create-kubernets-cluster-using-vagrant.git
+cd create-kubernetes-cluster-using-vagrant
 ```
 
 ### How to install VirtualBox
