@@ -10,8 +10,7 @@ Create cluster require 2 primary components
 
 ### Clone Repository
 ```bash
-git clone https://github.com/ankurloriya/create-kubernets-cluster-using-vagrant.git
-cd create-kubernetes-cluster-using-vagrant
+git clone https://github.com/ankurloriya/create-kubernets-cluster-using-vagrant.git && cd create-kubernetes-cluster-using-vagrant
 ```
 
 ### How to install VirtualBox
